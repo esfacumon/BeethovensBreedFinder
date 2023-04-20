@@ -1,18 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+<!--
+private fun getFakeDogs(): MutableList<Dog> {
+    val dogList = mutableListOf<Dog>()
+    dogList.add(
+        Dog(
+            1, 1, "Chihuahua", "Toy", 5.4,
+            6.7, "", "12 - 15", "", 10.5,
+            12.3
+        )
+    )
+    dogList.add(
+        Dog(
+            2, 1, "Labrador", "Toy", 5.4,
+            6.7, "", "12 - 15", "", 10.5,
+            12.3
+        )
+    )
+    dogList.add(
+        Dog(
+            3, 1, "Retriever", "Toy", 5.4,
+            6.7, "", "12 - 15", "", 10.5,
+            12.3
+        )
+    )
+    dogList.add(
+        Dog(
+            4, 1, "San Bernardo", "Toy", 5.4,
+            6.7, "", "12 - 15", "", 10.5,
+            12.3
+        )
+    )
+    dogList.add(
+        Dog(
+            5, 1, "Husky", "Toy", 5.4,
+            6.7, "", "12 - 15", "", 10.5,
+            12.3
+        )
+    )
+    dogList.add(
+        Dog(
+            6, 1, "Xoloscuincle", "Toy", 5.4,
+            6.7, "", "12 - 15", "", 10.5,
+            12.3
+        )
+    )
+    return dogList
+}
+-->

@@ -12,7 +12,7 @@ class DogAdapter: ListAdapter<Dog, DogAdapter.DogViewHolder>(DiffCallback) {
 
     companion object DiffCallback: DiffUtil.ItemCallback<Dog>() {
         override fun areItemsTheSame(oldItem: Dog, newItem: Dog): Boolean {
-            return oldItem === newItem // check if they are same instance
+            return oldItem === newItem
         }
 
 

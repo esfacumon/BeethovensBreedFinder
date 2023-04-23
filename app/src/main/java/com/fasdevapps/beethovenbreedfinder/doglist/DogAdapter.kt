@@ -2,6 +2,7 @@ package com.fasdevapps.beethovenbreedfinder.doglist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.AdapterView.OnItemClickListener
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -20,6 +21,12 @@ class DogAdapter: ListAdapter<Dog, DogAdapter.DogViewHolder>(DiffCallback) {
             return oldItem.id == newItem.id
         }
 
+    }
+
+    private var onItemClickListener: ((Dog) -> Unit)? = null
+
+    fun setOnItemClickListener(onItemClickListener: (Dog) -> Unit) {
+        this.onItemClickListener = onItemClickListener
     }
 
 
@@ -41,6 +48,9 @@ class DogAdapter: ListAdapter<Dog, DogAdapter.DogViewHolder>(DiffCallback) {
     ): RecyclerView.ViewHolder(binding.root) {
         fun bind(dog: Dog) {
             binding.tvDogName.text = dog.name
+            binding.tvDogName.setOnClickListener {
+                onItemClickListener?.invoke(dog)
+            }
         }
     }
 }

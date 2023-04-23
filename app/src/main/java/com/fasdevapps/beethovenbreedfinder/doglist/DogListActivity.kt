@@ -11,7 +11,6 @@ import com.fasdevapps.beethovenbreedfinder.viewmodel.DogListViewModel
 
 class DogListActivity : AppCompatActivity() {
 
-    // un viewmodel se instancia de la siguiente manera:
     private val dogListViewModel: DogListViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +22,11 @@ class DogListActivity : AppCompatActivity() {
         rvDog.layoutManager = LinearLayoutManager(this)
 
         val adapter = DogAdapter()
+
+        adapter.setOnItemClickListener {
+
+        }
+
         rvDog.adapter = adapter
 
         // observe: se ejecuta cuando la lista reciba algún cambio

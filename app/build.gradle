@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -45,8 +46,6 @@ dependencies {
 
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
     implementation 'androidx.activity:activity-ktx:1.7.1'
-
-    implementation 'com.squareup.retrofit2:'
 
     // Retrofit, moshi
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

@@ -1,7 +1,10 @@
 package com.fasdevapps.beethovenbreedfinder.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-data class Dog(
+@Parcelize
+data class Dog (
     val id: Long,
     val index: Int,
     val name: String,
@@ -11,6 +14,6 @@ data class Dog(
     val imageUrl: String,
     val lifeExpectancy: String,
     val temperament: String,
-    val weightFemale: Double,
-    val weightMale: Double,
-)
+    val weightFemale: String,
+    val weightMale: String,
+) : Parcelable

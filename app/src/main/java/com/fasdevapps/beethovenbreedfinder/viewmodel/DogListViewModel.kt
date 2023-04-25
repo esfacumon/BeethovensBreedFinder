@@ -17,9 +17,9 @@ class DogListViewModel: ViewModel() {
      * mutable _dogList para respetar el encapsulamiento
      */
     private val _dogList = MutableLiveData<List<Dog>>()
-
     val dogList: LiveData<List<Dog>> // esta Lista privada solo implementará este método get.
         get() = _dogList
+
 
     init {
         downloadDogs()

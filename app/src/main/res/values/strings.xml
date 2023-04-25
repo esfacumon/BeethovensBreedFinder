@@ -5,7 +5,9 @@
     <string name="height">Height</string>
     <string name="group">Group</string>
     <string name="male">Male</string>
-    <string name="error_showing_dog_not_found">La raza no existe</string>
+    <string name="error_showing_dog_not_found">Breed doesn\'t exist</string>
     <string name="dog_index_format">#%d</string>
     <string name="dog_life_expectancy_format">%s years</string>
+    <string name="error_fetching_data">Error in fetching data, please check your internet connection</string>
+    <string name="error_unknown">Unknown error</string>
 </resources>
